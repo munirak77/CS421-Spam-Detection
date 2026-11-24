@@ -1,0 +1,46 @@
+{
+  "seed": 42,
+  "cv_folds": 5,
+  "primary_metric": "Spam-class F1",
+  "final_test_used": true,
+  "tfidf": {
+    "max_features": 5000,
+    "ngram_range": [
+      1,
+      2
+    ],
+    "lowercase": true
+  },
+  "logistic_regression": {
+    "C": 1.0,
+    "solver": "liblinear",
+    "max_iter": 2000
+  },
+  "linear_svm": {
+    "C": 1.0,
+    "dual": true,
+    "max_iter": 10000
+  },
+  "cnn": {
+    "max_tokens": 5000,
+    "max_length": 300,
+    "embedding_dim": 64,
+    "filters": 64,
+    "kernel_size": 5,
+    "dense_units": 32,
+    "dropout": 0.3,
+    "batch_size": 32,
+    "epochs": 5,
+    "learning_rate": 0.001,
+    "prediction_threshold": 0.5,
+    "fold_seed_rule": "SEED + fold_number"
+  },
+  "versions": {
+    "python": "3.13.18",
+    "pandas": "2.2.3",
+    "numpy": "2.4.6",
+    "scikit_learn": "1.6.1",
+    "tensorflow": "2.21.0"
+  },
+  "final_training_seed": 42
+}

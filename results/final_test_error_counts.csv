@@ -1,0 +1,4 @@
+Model,False positives,False negatives,Total errors
+Logistic Regression,8,23,31
+Linear SVM,8,4,12
+Text CNN,14,14,28
