@@ -1,0 +1,14 @@
+{
+  "max_tokens": 5000,
+  "output_sequence_length": 300,
+  "standardize": "lower_and_strip_punctuation",
+  "split": "whitespace",
+  "output_mode": "int",
+  "prediction_threshold": 0.5,
+  "final_training_seed": 42,
+  "input_text": "Prepared subject plus body",
+  "labels": {
+    "0": "Ham",
+    "1": "Spam"
+  }
+}
